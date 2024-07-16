@@ -5,12 +5,24 @@ return {
     opts = {
       mappings = {
         -- first key is the mode
+        v = {
+          ["<M-up>"] = { ":m '<-2<CR>gv=gv", desc = "Move selection one line up" },
+          ["<M-down>"] = { ":m '>+1<CR>gv=gv", desc = "Move selection one line down" },
+        },
+
         n = {
           -- second key is the lefthand side of the map
           -- mappings seen under group name "Buffer
 
           ["<Leader>e"] = { "<Cmd>Neotree toggle right<CR>", desc = "Toggle Explorer Tree to the right" },
           ["<Leader>s"] = { ":%s/\\s\\+$//e<CR>", desc = "Remove all trailing whitespaces" },
+          ["<Leader>a"] = { "ggVG", desc = "Select all" },
+
+          ["<M-up>"] = { "ddkP", desc = "Move line one line up" },
+          ["<M-down>"] = { "ddp", desc = "Move line one line down" },
+
+          ["<M-z>"] = { ":set wrap!<CR>", desc = "toggle wrap" },
+
           -- ["<C-d>"] = { "<C-d>zz", desc = "Scroll half page down and put cursor in middle of screen" },
           -- ["<C-u>"] = { "<C-u>zz", desc = "Scroll half page up and put cursor in middle of screen" },
 
