@@ -5,6 +5,8 @@ return {
     opts = {
       mappings = {
         -- first key is the mode
+
+        -- Visual Mode
         v = {
           ["<M-up>"] = { ":m '<-2<CR>gv=gv", desc = "Move selection one line up" },
           ["<M-down>"] = { ":m '>+1<CR>gv=gv", desc = "Move selection one line down" },
@@ -13,9 +15,9 @@ return {
           ["<M-j>"] = { ":m '>+1<CR>gv=gv", desc = "Move selection one line down" },
         },
 
+        -- Normal Mode
         n = {
           -- second key is the lefthand side of the map
-          -- mappings seen under group name "Buffer
 
           ["<Leader>e"] = { "<Cmd>Neotree toggle right<CR>", desc = "Toggle Explorer Tree to the right" },
           ["<Leader>s"] = { ":%s/\\s\\+$//e<CR>", desc = "Remove all trailing whitespaces" },
@@ -37,6 +39,11 @@ return {
         t = {
           -- setting a mapping to false will disable it
           -- ["<esc>"] = false,
+        },
+
+        -- Insert Mode
+        i = {
+          ["<M-d>"] = { "<C-o>dw", desc = "Delete forward word" },
         },
       },
     },
