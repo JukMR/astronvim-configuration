@@ -13,6 +13,8 @@ return {
 
           ["<M-k>"] = { ":m '<-2<CR>gv=gv", desc = "Move selection one line up" },
           ["<M-j>"] = { ":m '>+1<CR>gv=gv", desc = "Move selection one line down" },
+
+          ["<Leader>y"] = { '"+y', desc = "Copy to system clipboard (+)" },
         },
 
         -- Normal Mode
@@ -31,6 +33,8 @@ return {
 
           ["<M-z>"] = { ":set wrap!<CR>", desc = "toggle wrap" },
 
+          ["<Leader>y"] = { '"+y', desc = "Copy to system clipboard (+)" },
+
           -- ["<C-d>"] = { "<C-d>zz", desc = "Scroll half page down and put cursor in middle of screen" },
           -- ["<C-u>"] = { "<C-u>zz", desc = "Scroll half page up and put cursor in middle of screen" },
 
@@ -46,6 +50,10 @@ return {
           ["<M-d>"] = { "<C-o>dw", desc = "Delete forward word" },
           ["<C-a>"] = { "<C-o>0", desc = "Go to beginning of the line" },
           ["<C-e>"] = { "<C-o>$", desc = "Go to end of line" },
+        },
+
+        x = {
+          ["<Leader>p"] = { '"_dP' },
         },
       },
     },
