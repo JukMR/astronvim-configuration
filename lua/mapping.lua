@@ -44,6 +44,8 @@ return {
         -- Insert Mode
         i = {
           ["<M-d>"] = { "<C-o>dw", desc = "Delete forward word" },
+          ["<C-a>"] = { "<C-o>0", desc = "Go to beginning of the line" },
+          ["<C-e>"] = { "<C-o>$", desc = "Go to end of line" },
         },
       },
     },
