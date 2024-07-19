@@ -61,6 +61,7 @@ return {
           number = true,
           relativenumber = true,
           signcolumn = "auto",
+          clipboard = "",
         },
         g = {},
       },
