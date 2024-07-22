@@ -39,8 +39,8 @@ return {
           -- ["<C-u>"] = { "<C-u>zz", desc = "Scroll half page up and put cursor in middle of screen" },
 
           -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
-          ["n"] = { "nzzzn", desc = "When searching for next term center screen" },
-          ["N"] = { "NzzzN", desc = "When searching for prev term center screen" },
+          ["n"] = { "nzzzv:set hlsearch<CR>", desc = "When searching for next term center screen" },
+          ["N"] = { "Nzzzv:set hlsearch<CR>", desc = "When searching for prev term center screen" },
         },
         t = {
           -- setting a mapping to false will disable it
