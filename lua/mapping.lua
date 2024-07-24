@@ -34,6 +34,7 @@ return {
           ["<M-z>"] = { ":set wrap!<CR>", desc = "toggle wrap" },
 
           ["<Leader>y"] = { '"+y', desc = "Copy to system clipboard (+)" },
+          ["<Leader>x"] = { '"+ygv"_d', desc = "Cut to system clipboard (+)" },
 
           -- ["<C-d>"] = { "<C-d>zz", desc = "Scroll half page down and put cursor in middle of screen" },
           -- ["<C-u>"] = { "<C-u>zz", desc = "Scroll half page up and put cursor in middle of screen" },
