@@ -42,6 +42,8 @@ return {
           -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
           ["n"] = { "nzzzv:set hlsearch<CR>", desc = "When searching for next term center screen" },
           ["N"] = { "Nzzzv:set hlsearch<CR>", desc = "When searching for prev term center screen" },
+
+          ["<Leader>q"] = { ":bd<CR>", desc = "Close current buffer" },
         },
         t = {
           -- setting a mapping to false will disable it
