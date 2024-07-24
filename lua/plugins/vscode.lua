@@ -32,6 +32,8 @@ return {
       mappings = {
         n = {
           ["<Leader>fs"] = "<CMD>call VSCodeNotify('actions.find')<CR>",
+          ["<Leader>q"] = "<Cmd>Tabclose<CR>",
+          ["<Leader>Q"] = "<Cmd>Tabclose!<CR>",
         },
       },
     },
