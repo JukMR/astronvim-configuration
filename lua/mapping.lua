@@ -43,7 +43,7 @@ return {
           ["n"] = { "nzzzv:set hlsearch<CR>", desc = "When searching for next term center screen" },
           ["N"] = { "Nzzzv:set hlsearch<CR>", desc = "When searching for prev term center screen" },
 
-          ["<Leader>q"] = { function() require("astrocore.buffer").close() end, desc = "Close current buffer" },
+          -- ["<Leader>q"] = { function() require("astrocore.buffer").close() end, desc = "Close current buffer" },
         },
         t = {
           -- setting a mapping to false will disable it
