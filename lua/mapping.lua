@@ -15,6 +15,7 @@ return {
           ["<M-j>"] = { ":m '>+1<CR>gv=gv", desc = "Move selection one line down" },
 
           ["<Leader>y"] = { '"+y', desc = "Copy to system clipboard (+)" },
+          ["<Leader>x"] = { '"+ygv"_d', desc = "Cut to system clipboard (+)" },
         },
 
         -- Normal Mode
@@ -22,7 +23,8 @@ return {
           -- second key is the lefthand side of the map
 
           ["<Leader>e"] = { "<Cmd>Neotree toggle right<CR>", desc = "Toggle Explorer Tree to the right" },
-          ["<Leader>s"] = { ":%s/\\s\\+$//e<CR>", desc = "Remove all trailing whitespaces" },
+          ["<Leader>z"] = { ":%s/\\s\\+$//e<CR>", desc = "Remove all trailing whitespaces" },
+          ["<Leader>s"] = { ":noa w<CR>", desc = "Save file without applying formatting" },
           ["<Leader>a"] = { "ggVG", desc = "Select all" },
 
           ["<M-up>"] = { "ddkP", desc = "Move line one line up" },
