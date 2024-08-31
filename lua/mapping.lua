@@ -23,7 +23,8 @@ return {
           -- second key is the lefthand side of the map
 
           ["<Leader>e"] = { "<Cmd>Neotree toggle right<CR>", desc = "Toggle Explorer Tree to the right" },
-          ["<Leader>z"] = { ":%s/\\s\\+$//e<CR>", desc = "Remove all trailing whitespaces" },
+
+          ["<Leader>s"] = { ":%os/\\s\\+$//e<CR>", desc = "Remove all trailing whitespaces" },
           ["<Leader>S"] = { ":noa w<CR>", desc = "Save file without applying formatting" },
           ["<Leader>a"] = { "ggVG", desc = "Select all" },
 
@@ -33,6 +34,7 @@ return {
           ["<M-k>"] = { "ddkP", desc = "Move line one line up" },
           ["<M-j>"] = { "ddp", desc = "Move line one line down" },
 
+          ["<Leader>z"] = { ":set wrap!<CR>", desc = "toggle wrap" },
           ["<M-z>"] = { ":set wrap!<CR>", desc = "toggle wrap" },
 
           ["<Leader>y"] = { '"+y', desc = "Copy to system clipboard (+)" },
