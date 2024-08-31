@@ -59,6 +59,7 @@ return {
           ["<C-e>"] = { "<C-o>$", desc = "Go to end of line" },
         },
 
+        -- Only visual mode (no select mode)
         x = {
           ["<Leader>p"] = { '"_dP' },
         },
