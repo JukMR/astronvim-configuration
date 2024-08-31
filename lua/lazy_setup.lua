@@ -13,6 +13,7 @@ require("lazy").setup({
   },
   { import = "community" },
   { import = "mapping" },
+  { import = "options" },
   { import = "plugins" },
   { import = "user_plugins" },
 } --[[@as LazySpec]], {

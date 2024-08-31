@@ -64,15 +64,6 @@ return {
           ["<Leader>p"] = { '"_dP' },
         },
       },
-      options = {
-        opt = {
-          number = true,
-          relativenumber = true,
-          signcolumn = "auto",
-          clipboard = "",
-        },
-        g = {},
-      },
     },
   },
 }
