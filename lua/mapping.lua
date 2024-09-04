@@ -24,7 +24,7 @@ return {
 
           ["<Leader>e"] = { "<Cmd>Neotree toggle right<CR>", desc = "Toggle Explorer Tree to the right" },
 
-          ["<Leader>s"] = { ":%os/\\s\\+$//e<CR>", desc = "Remove all trailing whitespaces" },
+          ["<Leader>s"] = { ":%s/\\s\\+$//e<CR>", desc = "Remove all trailing whitespaces" },
           ["<Leader>S"] = { ":noa w<CR>", desc = "Save file without applying formatting" },
           ["<Leader>a"] = { "ggVG", desc = "Select all" },
 
