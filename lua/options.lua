@@ -9,6 +9,7 @@ return {
           relativenumber = true,
           signcolumn = "auto",
           clipboard = "",
+          colorcolumn = "120",
         },
         g = {},
       },
