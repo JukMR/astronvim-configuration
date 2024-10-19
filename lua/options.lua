@@ -10,6 +10,7 @@ return {
           signcolumn = "auto",
           clipboard = "",
           colorcolumn = "120",
+          textwidth = 120,
         },
         g = {},
       },
