@@ -48,6 +48,7 @@ return {
           ["N"] = { "Nzzzv:set hlsearch<CR>", desc = "When searching for prev term center screen" },
 
           -- ["<Leader>q"] = { function() require("astrocore.buffer").close() end, desc = "Close current buffer" },
+          ["<Leader>\\"] = { ":set list!<CR>", desc = "Toggle list" },
         },
         t = {
           -- setting a mapping to false will disable it
