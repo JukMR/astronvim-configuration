@@ -15,6 +15,8 @@ return {
           tabstop = 4,
           softtabstop = 4,
           shiftwidth = 4,
+          showbreak = "↪\\",
+          listchars = "tab:→ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨",
         },
         g = {},
       },
