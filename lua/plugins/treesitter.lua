@@ -14,6 +14,7 @@ return {
   },
   {
     "nvim-treesitter/nvim-treesitter-context",
+    commit = "895ec44", -- setting this version to be compatible with neovim 0.9.5
     lazy = false,
     opts = {
       mode = "topline",
