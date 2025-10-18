@@ -61,11 +61,11 @@ return {
           ["<C-a>"] = { "<C-o>0", desc = "Go to beginning of the line" },
           ["<C-e>"] = { "<C-o>$", desc = "Go to end of line" },
           ["<C-l>"] = {
-            'copilot#Accept("<CR>")',
+            'copilot#Accept("\\<CR>")',
             desc = "Accept Copilot suggestion",
             expr = true,
             silent = true,
-            script = true,
+            replace_keycodes = false,
           },
         },
 
