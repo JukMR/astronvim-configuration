@@ -15,6 +15,7 @@ return {
           ["<M-j>"] = { ":m '>+1<CR>gv=gv", desc = "Move selection one line down" },
 
           ["<Leader>y"] = { '"+y', desc = "Copy to system clipboard (+)" },
+          ["<Leader>c"] = { '"+y', desc = "Copy to system clipboard (+)" },
           ["<Leader>x"] = { '"+ygv"_d', desc = "Cut to system clipboard (+)" },
         },
 
