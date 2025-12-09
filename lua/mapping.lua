@@ -61,13 +61,13 @@ return {
           ["<M-d>"] = { "<C-o>dw", desc = "Delete forward word" },
           ["<C-a>"] = { "<C-o>0", desc = "Go to beginning of the line" },
           ["<C-e>"] = { "<C-o>$", desc = "Go to end of line" },
-          ["<C-l>"] = {
-            'copilot#Accept("\\<CR>")',
-            desc = "Accept Copilot suggestion",
-            expr = true,
-            silent = true,
-            replace_keycodes = false,
-          },
+          --   ["<C-l>"] = {
+          --     'copilot#Accept("\\<CR>")',
+          --     desc = "Accept Copilot suggestion",
+          --     expr = true,
+          --     silent = true,
+          --     replace_keycodes = false,
+          --   },
         },
 
         -- Only visual mode (no select mode)
