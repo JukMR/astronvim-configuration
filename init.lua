@@ -1,5 +1,15 @@
 -- This file simply bootstraps the installation of Lazy.nvim and then calls other files for execution
 -- This file doesn't necessarily need to be touched, BE CAUTIOUS editing this file and proceed at your own risk.
+
+if vim.g.vscode then
+  package.loaded["vscode"] = {
+    action = function() end,
+    call = function() end,
+    on = function() end,
+    has_config = function() return false end,
+  }
+end
+
 local lazypath = vim.env.LAZY or vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
 if not (vim.env.LAZY or (vim.uv or vim.loop).fs_stat(lazypath)) then
   -- stylua: ignore
@@ -22,8 +32,8 @@ require "polish"
 -- See: https://marketplace.visualstudio.com/items?itemName=JulianIaquinandi.nvim-ui-modifier
 
 if vim.g.vscode then
-    vim.api.nvim_exec(
-        [[
+  vim.api.nvim_exec(
+    [[
     " THEME CHANGER
     function! SetCursorLineNrColorInsert(mode)
         " Insert mode: blue
@@ -46,8 +56,8 @@ if vim.g.vscode then
         autocmd ModeChanged [vV\x16]*:* call VSCodeNotify('nvim-theme.normal')
     augroup END
 ]],
-        false
-    )
+    false
+  )
 
-    return
+  return
 end

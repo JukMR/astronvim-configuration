@@ -12,12 +12,12 @@ return {
       -- add more arguments for adding more treesitter parsers
     },
   },
-  {
-    "nvim-treesitter/nvim-treesitter-context",
-    commit = "895ec44", -- setting this version to be compatible with neovim 0.9.5
-    lazy = false,
-    opts = {
-      mode = "topline",
-    },
-  },
+  --[[ { ]]
+  -- "nvim-treesitter/nvim-treesitter-context",
+  -- commit = "895ec44", -- setting this version to be compatible with neovim 0.9.5
+  -- lazy = false,
+  -- opts = {
+  --   mode = "topline",
+  -- },
+  -- },
 }
