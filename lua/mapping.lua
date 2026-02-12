@@ -17,6 +17,7 @@ return {
           ["<Leader>y"] = { '"+y', desc = "Copy to system clipboard (+)" },
           ["<Leader>c"] = { '"+y', desc = "Copy to system clipboard (+)" },
           ["<Leader>x"] = { '"+ygv"_d', desc = "Cut to system clipboard (+)" },
+          ["<Leader>j"] = { "!jq .<CR>", desc = "Format selected JSON with jq" },
         },
 
         -- Normal Mode
@@ -40,6 +41,8 @@ return {
 
           ["<Leader>y"] = { '"+y', desc = "Copy to system clipboard (+)" },
           ["<Leader>x"] = { '"+ygv"_d', desc = "Cut to system clipboard (+)" },
+          ["<Leader>j"] = { ":%!jq .<CR>", desc = "Format full json with jq" },
+          ["<C-S-i>"] = { ":%!jq .<CR>", desc = "Format full json with jq" },
 
           -- ["<C-d>"] = { "<C-d>zz", desc = "Scroll half page down and put cursor in middle of screen" },
           -- ["<C-u>"] = { "<C-u>zz", desc = "Scroll half page up and put cursor in middle of screen" },
