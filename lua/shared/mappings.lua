@@ -36,6 +36,14 @@ function M.setup()
 
   -- Visual-only mode (no select mode)
   vim.keymap.set("x", "<Leader>p", '"_dP', { desc = "Paste without overwriting register" })
+
+  -- Sort / dedup lines
+  vim.keymap.set("v", "<Leader>sa", "!sort<CR>", { desc = "Sort selected lines ascending" })
+  vim.keymap.set("v", "<Leader>sd", "!sort -r<CR>", { desc = "Sort selected lines descending" })
+  vim.keymap.set("v", "<Leader>su", "!sort -u<CR>", { desc = "Sort selected lines & remove duplicates" })
+  vim.keymap.set("n", "<Leader>sa", ":%!sort<CR>", { desc = "Sort entire file ascending" })
+  vim.keymap.set("n", "<Leader>sd", ":%!sort -r<CR>", { desc = "Sort entire file descending" })
+  vim.keymap.set("n", "<Leader>su", ":%!sort -u<CR>", { desc = "Sort entire file & remove duplicates" })
 end
 
 return M
