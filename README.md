@@ -37,3 +37,13 @@ Custom keybindings are organized across two files:
 | `lua/shared/mappings.lua` | Raw `vim.keymap.set` | For mappings that should work regardless of AstroNvim (e.g., VSCode) |
 
 See `:help astrocore-mappings` for details on the AstroNvim mapping format.
+
+## Package Managers
+
+| Manager | What it installs | Example |
+|---|---|---|
+| `:Lazy` | Neovim plugins (`.lua` files) | `nvim-treesitter`, `blink.cmp`, `neo-tree.nvim` |
+| `:Mason` | External binaries (executables) | `lua-language-server`, `ty`, `stylua` |
+
+- **`:Lazy`** — for Neovim features (UI, keybindings, file explorer, completion engine)
+- **`:Mason`** — for language servers, formatters, linters, debuggers (anything that runs as a separate process)
