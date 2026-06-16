@@ -26,3 +26,14 @@ git clone git@github.com:JukMR/astrovim_configuration.git ~/.config/nvim
 ```shell
 nvim
 ```
+
+## Keybindings Reference
+
+Custom keybindings are organized across two files:
+
+| File | Style | When to use |
+|---|---|---|
+| `lua/mapping.lua` | `astrocore opts.mappings` | **Best place** — AstroNvim-native, supports which-key descriptions, grouped keys |
+| `lua/shared/mappings.lua` | Raw `vim.keymap.set` | For mappings that should work regardless of AstroNvim (e.g., VSCode) |
+
+See `:help astrocore-mappings` for details on the AstroNvim mapping format.
