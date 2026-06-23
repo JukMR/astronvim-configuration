@@ -20,6 +20,19 @@ return {
         },
         g = {},
       },
+      autocmds = {
+        trim_whitespace = {
+          {
+            event = "BufWritePre",
+            pattern = "*",
+            callback = function()
+              local save = vim.fn.winsaveview()
+              vim.cmd [[%s/\s\+$//e]]
+              vim.fn.winrestview(save)
+            end,
+          },
+        },
+      },
     },
   },
 }
