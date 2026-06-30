@@ -8,6 +8,7 @@ return {
       mappings = {
         n = {
           ["<Leader>e"] = { "<Cmd>Neotree toggle right<CR>", desc = "Toggle Explorer Tree to the right" },
+          ["<Leader>bn"] = { "<Cmd>enew<CR>", desc = "New buffer" },
         },
       },
     },
