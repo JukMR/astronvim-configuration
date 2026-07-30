@@ -33,6 +33,8 @@ function M.setup()
   vim.keymap.set("i", "<M-d>", "<C-o>dw", { desc = "Delete forward word" })
   vim.keymap.set("i", "<C-a>", "<C-o>0", { desc = "Go to beginning of the line" })
   vim.keymap.set("i", "<C-e>", "<C-o>$", { desc = "Go to end of line" })
+  vim.keymap.set("i", "<C-BS>", "<C-w>", { desc = "Delete previous word" })
+  vim.keymap.set("i", "<C-Backspace>", "<C-w>", { desc = "Delete previous word" })
 
   -- Visual-only mode (no select mode)
   vim.keymap.set("x", "<Leader>p", '"_dP', { desc = "Paste without overwriting register" })
