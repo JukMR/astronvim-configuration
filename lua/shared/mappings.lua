@@ -29,6 +29,10 @@ function M.setup()
   vim.keymap.set("n", "N", "Nzzzv:set hlsearch<CR>", { desc = "When searching for prev term center screen" })
   vim.keymap.set("n", "<Leader>\\", ":set list!<CR>", { desc = "Toggle list" })
 
+  -- Format text (gq) on whole buffer / selection
+  vim.keymap.set("n", "<Leader>`", "gggqG", { desc = "Format text (gq) on entire buffer" })
+  vim.keymap.set("v", "<Leader>`", "gq",    { desc = "Format text (gq) on selection" })
+
   -- Insert Mode
   vim.keymap.set("i", "<M-d>", "<C-o>dw", { desc = "Delete forward word" })
   vim.keymap.set("i", "<C-a>", "<C-o>0", { desc = "Go to beginning of the line" })
