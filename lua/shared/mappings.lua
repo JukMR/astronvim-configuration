@@ -35,6 +35,7 @@ function M.setup()
 
   -- Insert Mode
   vim.keymap.set("i", "<M-d>", "<C-o>dw", { desc = "Delete forward word" })
+  vim.keymap.set("i", "<C-Del>", "<C-o>dw", { desc = "Delete forward word" })
   vim.keymap.set("i", "<C-a>", "<C-o>0", { desc = "Go to beginning of the line" })
   vim.keymap.set("i", "<C-e>", "<C-o>$", { desc = "Go to end of line" })
   vim.keymap.set("i", "<C-BS>", "<C-w>", { desc = "Delete previous word" })
