@@ -13,7 +13,7 @@ function M.setup()
 
   -- Normal Mode
   vim.keymap.set("n", "<Leader>s", ":%s/\\s\\+$//e<CR>", { desc = "Remove all trailing whitespaces" })
-  vim.keymap.set("n", "<Leader>S", ":noa w<CR>", { desc = "Save file without applying formatting" })
+  vim.keymap.set("n", "<Leader>W", ":noa w<CR>", { desc = "Save file without applying formatting" })
   vim.keymap.set("n", "<Leader>a", "ggVG", { desc = "Select all" })
   vim.keymap.set("n", "<M-up>", "ddkP", { desc = "Move line one line up" })
   vim.keymap.set("n", "<M-down>", "ddp", { desc = "Move line one line down" })
