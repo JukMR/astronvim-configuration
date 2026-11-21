@@ -24,11 +24,11 @@ require("lazy").setup({
     rtp = {
       -- disable some rtp plugins, add more to your liking
       disabled_plugins = {
-        "gzip",
+        -- "gzip", -- needed to browse *.gz/*.tgz archives with gzip.vim
         "netrwPlugin",
-        "tarPlugin",
+        -- "tarPlugin", -- needed to browse *.tar/*.tar.gz archives with tar.vim
         "tohtml",
-        "zipPlugin",
+        -- "zipPlugin", -- needed to browse *.zip/*.jar archives with zip.vim
       },
     },
   },
